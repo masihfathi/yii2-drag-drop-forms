@@ -115,10 +115,8 @@ class ModuleController extends Controller {
             } else {
                 Yii::$app->session->setFlash('error', Yii::t('builder', 'An confirmation email was not sent'));
             }
-            $this->layout = '@app/views/layouts/main';
             return $this->render('response');
         } else {
-            $this->layout = '@app/views/layouts/main';
             return $this->render('view', ['form' => $form]);
         }
     }
@@ -161,7 +159,6 @@ class ModuleController extends Controller {
             }
             return $this->refresh();
         } else {
-            $this->layout = '@app/views/layouts/main';
             return $this->render('update-item', ['form' => $form,'itemId'=>$id]);
         }
     }

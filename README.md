@@ -41,8 +41,12 @@ Add the following code in your configuration file:
 ```php
 'modules' => [
     'forms' => [
-          'class' => 'masihfathi\form\Module',
+        'class' => '\masihfathi\form\Module',
      ],
+     // Module Kartik-v Grid
+    'gridview' => [
+        'class' => '\kartik\grid\Module'
+     ], 
 ]
 ```
 
@@ -153,3 +157,4 @@ codecept run
         "kartik-v/yii2-grid": "*"
     }
 ```
+Font Awesome must be available.
