@@ -29,10 +29,10 @@ Added Feature:
 Bug Fixed
 * Fix view bugs
 
-<p align="center">
-  <img src="https://photos.app.goo.gl/Y67ABwe1TJhEyR2Q2" width="350"/>
-</p>
+![submitted data] (https://user-images.githubusercontent.com/13271510/33189219-0337fafa-d0b6-11e7-9a8c-788febb158da.png)
+
 ## Installation Form Builder
+
 ```
 composer require masihfathi/yii2-drag-drop-forms "dev-master"
 ```
