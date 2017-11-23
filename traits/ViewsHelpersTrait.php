@@ -17,8 +17,7 @@ trait ViewsHelpersTrait {
      *
      * @param string $w
      * @return string
-     * @throws \yii\base\InvalidParamException
-     */
+     * @throws \yii\base\InvalidParamExceptionte
     public function getPreviewButtonJavascript($w) {
         $params = Yii::$app->request->queryParams;
         if (isset($params['form_id'])) {
@@ -30,9 +29,9 @@ trait ViewsHelpersTrait {
             var selectedId = $("' . $w . '").yiiGridView("getSelectedRows");
 
             if(selectedId.length == 0) {
-                alert("' . Yii::t('traits', 'Select at least one item') . '");
+                alert("' . Yii::t('builder', 'Select at least one item') . '");
             } else if(selectedId.length>1){
-                alert("' . Yii::t('traits', 'Select only 1 item') . '");
+                alert("' . Yii::t('builder', 'Select only 1 item') . '");
             } else {
                 var url = "' . Url::to(['preview', 'form_id' => $form_id]) . '&&id="+selectedId[0];
                 window.open(url,"_blank");
@@ -57,9 +56,9 @@ trait ViewsHelpersTrait {
             var selectedId = $("' . $w . '").yiiGridView("getSelectedRows");
 
             if(selectedId.length == 0) {
-                alert("' . Yii::t('traits', 'Select at least one item') . '");
+                alert("' . Yii::t('builder', 'Select at least one item') . '");
             } else {
-                var choose = confirm("' . Yii::t('traits', 'Do you want delete selected items?') . '");
+                var choose = confirm("' . Yii::t('builder', 'Do you want delete selected items?') . '");
 
                 if (choose == true) {
                     $.ajax({
@@ -92,9 +91,9 @@ trait ViewsHelpersTrait {
             var selectedId = $("' . $w . '").yiiGridView("getSelectedRows");
         
             if(selectedId.length == 0) {
-                alert("' . Yii::t('traits', 'Select at least one item') . '");
+                alert("' . Yii::t('builder', 'Select at least one item') . '");
             } else if(selectedId.length>1){
-                alert("' . Yii::t('traits', 'Select only 1 item') . '");
+                alert("' . Yii::t('builder', 'Select only 1 item') . '");
             } else {
                 var url = "' . Url::to(['update-item', 'form_id' => $form_id]) . '&&id="+selectedId[0];
                 window.open(url,"_blank");
@@ -108,7 +107,7 @@ trait ViewsHelpersTrait {
      * @return string
      */
     public function getExitButton() {
-        return $this->getStandardButton('fa fa-sign-out text-blue', Yii::t('traits', 'Exit'), ['index']);
+        return $this->getStandardButton('fa fa-sign-out text-blue', Yii::t('builder', 'Exit'), ['index']);
     }    
     /**
      * Return action reset button
@@ -122,7 +121,7 @@ trait ViewsHelpersTrait {
         }else {
             throw new \Exception('form id param not found');    
         }
-        return $this->getStandardButton('fa fa-repeat text-aqua', Yii::t('traits', 'Reset'), ['list', 'form_id' => $form_id], ['class' => 'btn btn-mini btn-reset', 'data-pjax' => 0]);
+        return $this->getStandardButton('fa fa-repeat text-aqua', Yii::t('builder', 'Reset'), ['list', 'form_id' => $form_id], ['class' => 'btn btn-mini btn-reset', 'data-pjax' => 0]);
     }    
     /**
      * Return action preview button
@@ -130,7 +129,7 @@ trait ViewsHelpersTrait {
      * @return string
      */
     public function getPreviewButton() {
-        return $this->getStandardButton('fa fa-eye text-blue', Yii::t('traits', 'Preview'), '#', ['class' => 'btn btn-mini btn-preview']);
+        return $this->getStandardButton('fa fa-eye text-blue', Yii::t('builder', 'Preview'), '#', ['class' => 'btn btn-mini btn-preview']);
     }
     /**
      * Return action delete button
@@ -138,7 +137,7 @@ trait ViewsHelpersTrait {
      * @return string
      */
     public function getDeleteButton() {
-        return $this->getStandardButton('fa fa-trash text-red', Yii::t('traits', 'Delete'), '#', ['class' => 'btn btn-mini btn-delete']);
+        return $this->getStandardButton('fa fa-trash text-red', Yii::t('builder', 'Delete'), '#', ['class' => 'btn btn-mini btn-delete']);
     }
     /**
      * Return action update button
@@ -146,7 +145,7 @@ trait ViewsHelpersTrait {
      * @return string
      */
     public function getUpdateButton() {
-            return $this->getStandardButton('fa fa-pencil text-yellow', Yii::t('traits', 'Update'), '#', ['class' => 'btn btn-mini btn-update']);
+            return $this->getStandardButton('fa fa-pencil text-yellow', Yii::t('builder', 'Update'), '#', ['class' => 'btn btn-mini btn-update']);
     }    
     /**
      * Return action create button
@@ -161,7 +160,7 @@ trait ViewsHelpersTrait {
             throw new \Exception('form id param not found');    
         }
         $form = FormModel::findModel($form_id);        
-        return $this->getStandardButton('fa fa-plus-circle text-green', Yii::t('traits', 'Create'), ['view', 'url' => $form->url],['class' => 'btn btn-mini','target'=>'_blank']);
+        return $this->getStandardButton('fa fa-plus-circle text-green', Yii::t('builder', 'Create'), ['view', 'url' => $form->url],['class' => 'btn btn-mini','target'=>'_blank']);
     }
 
 
@@ -171,7 +170,7 @@ trait ViewsHelpersTrait {
      * @return string
      */
     public function getSendButton() {
-        return $this->getStandardButton('fa fa-paper-plane text-orange', Yii::t('traits', 'Send'), '#', ['class' => 'btn btn-mini btn-send']);
+        return $this->getStandardButton('fa fa-paper-plane text-orange', Yii::t('builder', 'Send'), '#', ['class' => 'btn btn-mini btn-send']);
     }
 
     /**
