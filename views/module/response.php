@@ -1,11 +1,9 @@
 <?php
-use kartik\widgets\Alert;
+use yii\bootstrap\Alert;
 
 echo Alert::widget([
-    'type' => Alert::TYPE_SUCCESS,
-    'title' => Yii::t('builder','Thank you!'),
-    'icon' => 'glyphicon glyphicon-ok-sign',
+    'options' => [
+        'class' => 'alert-info',
+    ],
     'body' => Yii::t('builder','Form successfully submitted'),
-    'showSeparator' => true,
-    //'delay' => 2000
 ]);
