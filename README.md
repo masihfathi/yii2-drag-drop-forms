@@ -24,11 +24,14 @@ FormBuilder module for Yii2
 Added Feature:
 * Edit, Delete, Preview of submitted item data
 * Search and filter submitted item data
-* after submit event for forms data to use form for payments or ...
-Bug Fixed:
+* After submit event for forms data to use form for payments or ...
+
+Bug Fixed
 * Fix view bugs
 
-![form submitted data](https://raw.githubusercontent.com/masihfathi/yii2-drag-drop-forms/demo-imgs/form-submitted-data.png)
+<p align="center">
+  <img src="https://photos.app.goo.gl/Y67ABwe1TJhEyR2Q2" width="350"/>
+</p>
 ## Installation Form Builder
 ```
 composer require masihfathi/yii2-drag-drop-forms "dev-master"
