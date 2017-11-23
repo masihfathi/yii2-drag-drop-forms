@@ -28,8 +28,9 @@ Added Feature:
 
 Bug Fixed
 * Fix view bugs
-
+```
 ![submitted data] (https://user-images.githubusercontent.com/13271510/33189219-0337fafa-d0b6-11e7-9a8c-788febb158da.png)
+```
 
 ## Installation Form Builder
 
