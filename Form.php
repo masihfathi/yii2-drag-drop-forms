@@ -26,15 +26,15 @@ use masihfathi\form\widgets\email\Send as SendEmail;
  *
  * Usage example:
  * ~~~
- * echo \pceuropa\forms\form::widget([
+ * echo \masihfathi\form\form::widget([
  *    'form' => ',{}'
  * ]);
  *
- * echo \pceuropa\forms\form::widget([
+ * echo \masihfathi\form\form::widget([
  *    'formId' => 1,
  * ]);
  * ~~~
- * echo \pceuropa\forms\Form::widget([
+ * echo \masihfathi\form\Form::widget([
  * FormBuilder requires Yii 2
  * http://www.yiiframework.com
  * https://github.com/yiisoft/yii2

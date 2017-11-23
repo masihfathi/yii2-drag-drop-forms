@@ -1,5 +1,5 @@
 <?php
-use app\traits\migrations\Migration;
+use masihfathi\form\traits\migrations\Migration;
 
 class m170101_000000_create_form_table extends Migration {
 
