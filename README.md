@@ -28,7 +28,7 @@ Added Feature:
 Bug Fixed:
 * Fix view bugs
 
-![alt text](https://photos.app.goo.gl/iKAU6OboYXRBm0Z63)  
+![form submitted data](https://raw.githubusercontent.com/masihfathi/yii2-drag-drop-forms/demo-imgs/form-submitted-data.png)
 ## Installation Form Builder
 ```
 composer require masihfathi/yii2-drag-drop-forms "dev-master"
