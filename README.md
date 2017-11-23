@@ -136,7 +136,7 @@ or
 cd vendor/masihfathi/yii2-drag-drop-forms
 codecept run
 ```
-dependency:
+## dependency
 ```
     "require": {
         "php": ">=7.0.0",
