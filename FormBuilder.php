@@ -293,7 +293,7 @@ class FormBuilder extends Widget {
         Yii::$app->i18n->translations['builder'] = [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'sourceLanguage' => 'en-US',
-                    'basePath' => '@app/modules/admin/modules/form/messages',
+                    'basePath' => '@masihfathi/form/messages',
               ];
       } 
     }
