@@ -11,7 +11,33 @@ use masihfathi\form\models\FormModel;
  * Trait ViewsHelper
  */
 trait ViewsHelpersTrait {
+    /**
+     * Return javascript for action preview button
+     *
+     * @param string $w
+     * @return string
+     * @throws \yii\base\InvalidParamException
+     */
+    public function getPreviewButtonJavascript($w) {
+        $params = Yii::$app->request->queryParams;
+        if (isset($params['form_id'])) {
+            $form_id = (int) $params['form_id'];
+        }else {
+            throw new \Exception('form id param not found');    
+        }        
+        return '$("a.btn-preview").click(function() {
+            var selectedId = $("' . $w . '").yiiGridView("getSelectedRows");
 
+            if(selectedId.length == 0) {
+                alert("' . Yii::t('builder', 'Select at least one item') . '");
+            } else if(selectedId.length>1){
+                alert("' . Yii::t('builder', 'Select only 1 item') . '");
+            } else {
+                var url = "' . Url::to(['preview', 'form_id' => $form_id]) . '&&id="+selectedId[0];
+                window.open(url,"_blank");
+            }
+        });';
+    }
     /**
      * Return javascript for action delete button
      *
