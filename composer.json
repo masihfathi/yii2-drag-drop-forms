@@ -1,0 +1,25 @@
+{
+    "name": "masihfathi/yii2-drag-drop-forms",
+    "description": "a complete drag and drop form builder",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "drag and drop form builder"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafal Marguzewicz",
+            "email": "info@pceuropa.net"
+        },
+        {
+            "name": "Masih Fathi",
+            "email": "masihfathi@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "masihfathi\\form\\": ""
+        }
+    }
+}
