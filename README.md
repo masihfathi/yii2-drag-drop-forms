@@ -112,7 +112,7 @@ or
 Before you can go on you need to create those tables in the database.
 
 ```
-yii migrate --migrationPath=@yii/rbac/migrations
+php yii migrate --migrationPath=@yii/rbac/migrations
 ```
 
 Building autorization data
@@ -127,7 +127,7 @@ To use generator console, add fallowing code to config console file
 ```
 Create rbac tables in the database
 ```
-yii migrate --migrationPath=@yii/rbac/migrations
+php yii migrate --migrationPath=@yii/rbac/migrations
 ```
 Create rules and roles for form module
 ```
