@@ -80,7 +80,15 @@ URLs for the translating tool:
                     'allow' => true,
                     'roles' => ['user'],            // role only authenticated user can
                 ]
+            ],
+          'controllerMap' => [
+            'module' => [
+              'class' => '\masihfathi\form\controllers\ModuleController',
+              'on afterSubmit'=>function($event){
+                    // code
+                }
             ]
+          ]
       ]
 ],
 ```
