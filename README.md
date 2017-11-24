@@ -21,12 +21,15 @@ FormBuilder module for Yii2
  * Rename table column after change the name of field
  * Drop table column after delete field in form
 
+User Forms Demo:
+![user forms](https://user-images.githubusercontent.com/13271510/33212218-4adb4926-d137-11e7-864d-639cce778934.png)
+
 Added Feature:
 * Edit, Delete, Preview of submitted item data
 * Search and filter submitted item data
 * After submit event for forms data to use form for payments or ...
 
-Demo:
+Submitted Data Demo:
 
 ![submitted data](https://user-images.githubusercontent.com/13271510/33189219-0337fafa-d0b6-11e7-9a8c-788febb158da.png)
 
