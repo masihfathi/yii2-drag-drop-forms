@@ -167,4 +167,4 @@ codecept run
         "kartik-v/yii2-grid": "*"
     }
 ```
-Font Awesome must be available.
+<strong>Font Awesome must be available.</strong>
