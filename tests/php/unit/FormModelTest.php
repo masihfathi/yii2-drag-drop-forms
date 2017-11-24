@@ -1,5 +1,5 @@
 <?php
-use pceuropa\forms\models\FormModel;
+use masihfathi\form\models\FormModel;
 use Codeception\Test\Unit;
 
 class FormModelTest extends Unit {

@@ -115,7 +115,7 @@ class InitController extends  Controller
             echo "\n";
         }
 
-        $rule = new \pceuropa\forms\rbac\AuthorFormRule;	// added successfully the rule
+        $rule = new \masihfathi\form\rbac\AuthorFormRule;	// added successfully the rule
         $updateOwnForm = $authManager->getRule($rule->name);
         if (!($updateOwnForm instanceof Rule)) {
             $authManager->add($rule);
