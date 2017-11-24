@@ -66,7 +66,7 @@ trait ViewsHelpersTrait {
                         url : "' . Url::to(['deletemultiple', 'form_id' => $form_id]) . '&&id="+selectedId,
                         data : {ids: selectedId},
                         success : function() {
-                            $.pjax.reload({container:"' . $w . '"});
+                            location.reload();
                         }
                     });
                 }
