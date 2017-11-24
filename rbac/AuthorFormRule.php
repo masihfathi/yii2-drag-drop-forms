@@ -20,7 +20,7 @@ class AuthorFormRule extends Rule
      */
     public function execute($user, $item, $params)
     {
-        $id = Yii::$app->request->get('id');
+        Yii::$app->request->get('form_id')?$id = Yii::$app->request->get('form_id'):$id = Yii::$app->request->get('id');
         $query = (new Query)->select('author')->where(['form_id' => $id])->from(Module::getInstance()->formTable)->one();
         return $query['author'] == $user;
     }
