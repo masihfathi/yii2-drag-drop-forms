@@ -12,7 +12,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=pceuropa_net',
+            'dsn' => 'mysql:host=localhost;dbname=form_test',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
