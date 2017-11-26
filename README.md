@@ -37,7 +37,7 @@ Bug Fixed
 * Fix view bugs
 
 To do
-* add module to manage payment methods ex. paypal, local payments and add payments button as optional drag and drop field to the form builder  
+* add module to manage payment methods e.g. paypal, local payments and add payments button as optional drag and drop field to the form builder  
 
 <hr/>
 
